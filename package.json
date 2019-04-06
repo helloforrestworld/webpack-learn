@@ -1,11 +1,14 @@
 {
   "name": "webpack-learn",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "webpack demo",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "forrest",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
 }
