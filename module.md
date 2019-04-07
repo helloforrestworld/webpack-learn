@@ -50,3 +50,5 @@ postcss-loader
   - autoprefixer
 
 #### css模块化打包
+
+#### 字体的打包

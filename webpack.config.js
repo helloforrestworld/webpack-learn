@@ -28,14 +28,18 @@ module.exports = {
           }
         }
     },{
+      test: /\.(eot|svg|ttf|woff|woff2)$/,
+      use: [
+        'file-loader'
+      ]
+    },{
         test: /\.(scss|css)$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 2,
-              modules: true
+              importLoaders: 2
             }
           },
           'postcss-loader',
