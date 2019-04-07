@@ -52,3 +52,11 @@ postcss-loader
 #### css模块化打包
 
 #### 字体的打包
+
+## plugins
+
+plugin 可以在webpack运行到某个时刻帮你做些事情
+
+html-webpack-plugin
+
+clean-webpack-plugin

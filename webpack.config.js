@@ -1,4 +1,6 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   // entry: './src/index.js',
@@ -42,11 +44,17 @@ module.exports = {
               importLoaders: 2
             }
           },
-          'postcss-loader',
-          'sass-loader'
+          'sass-loader',
+          'postcss-loader'
         ]
     }]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    }),
+    new CleanWebpackPlugin()
+  ],
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
